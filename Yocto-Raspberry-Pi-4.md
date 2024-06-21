@@ -1,7 +1,4 @@
-# Embedded-Linux
-Embedded Linux Projects using Yocto
-
-## Build Yocto Poky Linux Image for Raspberry Pi 4 ##
+# Build Yocto Poky Linux Image for Raspberry Pi 4 ##
 
 ### Install pre-requisites ###
 
