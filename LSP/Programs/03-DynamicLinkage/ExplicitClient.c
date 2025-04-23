@@ -17,7 +17,7 @@ int main(void)
     handle = dlopen("./libmymath.so", RTLD_NOW);
     if (handle == NULL)
     {
-        printf("\nFailed To Load Dynamic Library ... Exiting !!!\n");
+        printf("\nFailed To Load Dynamic Library : %s ... Exiting !!!\n", dlerror());
         exit(EXIT_FAILURE);
     }
 
