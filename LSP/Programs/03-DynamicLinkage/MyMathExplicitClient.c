@@ -42,7 +42,7 @@ int main(void)
         printf("\nLibrary Unmapped ... \n");
     else
     {
-        printf("\nFailed To Unlink Dynamic Library ... Exiting !!!");
+        printf("\nFailed To Unlink Dynamic Library : %s ... Exiting !!!", dlerror());
         exit(EXIT_FAILURE);
     }
 
