@@ -7,10 +7,10 @@ gcc -c -fPIC MyMath.c
 gcc -shared -nostartfiles -s -o libmymath.so MyMath.o
 
 # Link Library To Executable
-gcc -o LoadTimeApp MyMathImplicitClient.c ./libmymath.so
+gcc -o LoadTimeApp ImplicitClient.c ./libmymath.so
 
 # Explicit Linking
-gcc -o RunTimeApp MyMathExplicitClient.c
+gcc -o RunTimeApp ExplicitClient.c
 
 
 

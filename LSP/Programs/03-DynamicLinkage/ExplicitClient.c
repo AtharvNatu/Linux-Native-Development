@@ -5,7 +5,6 @@
 
 int main(void)
 {
-    char* ptr = NULL;
     void* handle = NULL;
     int (*fnptr)(int);
     int num = 3;
@@ -43,8 +42,13 @@ int main(void)
     else
     {
         printf("\nFailed To Unlink Dynamic Library : %s ... Exiting !!!", dlerror());
+        if (handle)
+            handle = NULL;
         exit(EXIT_FAILURE);
     }
+
+    if (handle)
+        handle = NULL;
 
     printf("\n%s() => End\n\n", __func__);
 
