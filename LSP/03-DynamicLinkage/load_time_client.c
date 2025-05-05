@@ -7,7 +7,7 @@ int main(void)
     int num = 3;
 
     printf("\n%s() => Start\n\n", __func__);
-    printf("PID : %d\n", getpid());
+    printf("pid : %d\n", getpid());
 
     // Load-Time Linkage (Implicit Linking)
     printf("Square of %d = %d\n", num, square(num));

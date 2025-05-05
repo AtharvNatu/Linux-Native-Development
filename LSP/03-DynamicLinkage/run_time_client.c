@@ -11,7 +11,7 @@ int main(void)
     int status;
 
     printf("\n%s() => Start\n\n", __func__);
-    printf("PID : %d\n", getpid());
+    printf("pid : %d\n", getpid());
 
     //* Request Link-Loader to load specified library and attach it into our address space
     handle = dlopen("./libmymath.so", RTLD_NOW);

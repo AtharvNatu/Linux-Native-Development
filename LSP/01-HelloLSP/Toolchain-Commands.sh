@@ -1,18 +1,18 @@
 # Single-Step Compile and Link
-# gcc -o App $1
+# gcc -o app hello_lsp.c
 
 
 # Step - 1 -> Pre-Processor
-gcc -E -o App.i HelloLSP.c
+gcc -E -o app.i hello_lsp.c
 
 # Step - 2 -> Compiler
-gcc -S App.i -o App.s
+gcc -S app.i -o app.s
 
 # Step - 3 -> Assembler
-gcc -c App.s -o App.o
+gcc -c app.s -o app.o
 
 # Step - 4 -> Linker
-gcc App.o -o App
+gcc app.o -o app
 
-./App
+./app
 
